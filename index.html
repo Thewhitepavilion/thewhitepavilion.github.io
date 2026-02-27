@@ -8,7 +8,6 @@
         :root { --gold: #bda37e; --dark: #2c3e50; --bg: #f8f9fa; }
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--dark); line-height: 1.6; }
         
-        /* Header */
         .hero { 
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
                         url('https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1000&auto=format&fit=crop'); 
@@ -16,37 +15,29 @@
             height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
         }
         .hero h1 { font-size: 1.8rem; margin: 0; letter-spacing: 3px; font-weight: 300; }
-        .hero p { font-size: 0.8rem; opacity: 0.9; margin-top: 8px; letter-spacing: 1px; }
+        .hero p { font-size: 0.8rem; opacity: 0.9; margin-top: 8px; }
 
         .container { max-width: 450px; margin: -30px auto 50px; padding: 15px; }
 
-        /* 公告栏 */
         .announcement {
             background: white; border-top: 4px solid var(--gold);
             padding: 20px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
-        /* 按钮样式 */
         .link-card {
-            background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px;
+            background: white; border-radius: 12px; padding: 18px; margin-bottom: 12px;
             display: flex; align-items: center; text-decoration: none; color: var(--dark);
             box-shadow: 0 4px 12px rgba(0,0,0,0.04); transition: 0.2s;
         }
         .link-card:active { transform: scale(0.97); background: #fafafa; }
-        .icon { font-size: 22px; margin-right: 15px; width: 25px; text-align: center; }
-        .text span { display: block; font-weight: bold; font-size: 1rem; }
-        .text small { font-size: 0.75rem; color: #888; }
+        .icon { font-size: 24px; margin-right: 15px; width: 30px; text-align: center; }
+        .text span { display: block; font-weight: bold; font-size: 1.1rem; }
+        .text small { font-size: 0.8rem; color: #888; }
 
-        /* 伪评价板块 (把人脉展示出来) */
-        .review-section {
-            background: #fdfdfd; padding: 15px; border-radius: 12px; margin-top: 20px;
-        }
-        .review-item {
-            font-style: italic; font-size: 0.85rem; color: #555;
-            padding: 10px 0; border-bottom: 1px solid #eee;
-        }
-        .review-item:last-child { border-bottom: none; }
+        /* 强调 WhatsApp 按钮 */
+        .btn-primary { background: #25d366; color: white !important; }
+        .btn-primary small { color: rgba(255,255,255,0.8) !important; }
 
         .footer { text-align: center; color: #ccc; padding: 20px; font-size: 0.7rem; }
     </style>
@@ -55,37 +46,31 @@
 
     <div class="hero">
         <h1>THE WHITE PAVILION</h1>
-        <p>Your Premium Home @ i-Soho i-City</p>
+        <p>i-Soho @ i-City, Shah Alam</p>
     </div>
 
     <div class="container">
         
         <div class="announcement">
             <h3 style="margin-top:0; color:var(--gold); font-size: 1rem;">Booking Rules 预订须知</h3>
-            <p style="margin: 5px 0;">• 24-hour full payment & deposit to confirm.</p>
+            <p style="margin: 5px 0;">• 24h payment & deposit to confirm reservation.</p>
             <p style="margin: 5px 0;">• Strictly No Smoking & No Parties.</p>
         </div>
 
-        <a href="https://wa.me/601168744885?text=Hi! I'm interested in booking The White Pavilion." class="link-card" style="background: #e8f5e9;">
+        <a href="https://wa.me/601168744885?text=Hi! I want to book The White Pavilion." class="link-card btn-primary">
             <div class="icon">💬</div>
-            <div class="text"><span>WhatsApp Booking</span><small>直接联系老板预订</small></div>
+            <div class="text"><span>WhatsApp 立即预订</span><small>点击发信息，触发自动回复</small></div>
+        </a>
+
+        <a href="https://wa.me/601168744885?text=Hi! I need the check-in guide." class="link-card">
+            <div class="icon">🔑</div>
+            <div class="text"><span>Check-in Guide</span><small>获取入住指引及密码锁说明</small></div>
         </a>
 
         <a href="https://waze.com/ul/hw281mshge" class="link-card">
             <div class="icon">🚗</div>
-            <div class="text"><span>Waze Navigation</span><small>一键导航至 i-Soho 大厅</small></div>
+            <div class="text"><span>Waze Navigation</span><small>一键导航直达大厅</small></div>
         </a>
-
-        <a href="tel:+601168744885" class="link-card">
-            <div class="icon">📞</div>
-            <div class="text"><span>Call Support</span><small>紧急电话联系</small></div>
-        </a>
-
-        <div class="review-section">
-            <h3 style="font-size: 0.9rem; margin-top: 0;">Guests Love Us ❤️</h3>
-            <div class="review-item">"The room is super clean and the Swan bed decor is amazing! High recommend." - J. Lim</div>
-            <div class="review-item">"老板回复很快，入住流程很顺畅。i-City夜景很美！" - 陈小姐</div>
-        </div>
 
     </div>
 
