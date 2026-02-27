@@ -5,60 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The White Pavilion | i-Soho i-City</title>
     <style>
-        :root { --gold: #bda37e; --dark: #2c3e50; }
-        body { font-family: 'STHeiti', 'Microsoft YaHei', sans-serif; margin: 0; padding: 0; background: #fdfdfd; color: var(--dark); line-height: 1.8; }
+        :root { --gold: #bda37e; --dark: #2c3e50; --bg: #f8f9fa; }
+        body { font-family: 'STHeiti', 'Microsoft YaHei', sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--dark); }
+        
+        /* 顶部横幅 */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                        url('https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2000&auto=format&fit=crop'); 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop'); 
             background-size: cover; background-position: center;
-            height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
+            height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
         }
-        .hero h1 { font-size: 2.5rem; margin: 0; letter-spacing: 4px; }
-        .container { max-width: 650px; margin: -40px auto 50px; padding: 30px; background: white; border-radius: 16px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); }
-        .policy-box { background: #fffcf5; border-left: 5px solid var(--gold); padding: 20px; border-radius: 4px; margin: 20px 0; font-size: 0.95rem; }
-        .location-box { background: #f0f4f8; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center; }
-        .nav-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 15px; }
-        .btn-nav { flex: 1; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; font-size: 0.9rem; }
-        .btn-waze { background: #33ccff; }
-        .btn-google { background: #4285f4; }
-        .btn-whatsapp { 
-            display: block; background: #25d366; color: white; text-align: center; 
-            padding: 18px; text-decoration: none; border-radius: 50px; 
-            font-weight: bold; font-size: 1.2rem; margin-top: 30px;
+        .hero h1 { font-size: 2rem; margin: 0; letter-spacing: 3px; }
+        .hero p { font-size: 0.9rem; opacity: 0.9; margin-top: 10px; }
+
+        .container { max-width: 500px; margin: -30px auto 50px; padding: 20px; position: relative; }
+
+        /* 按钮样式 */
+        .link-card {
+            background: white; border-radius: 12px; padding: 18px; margin-bottom: 15px;
+            display: flex; align-items: center; text-decoration: none; color: var(--dark);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee;
         }
-        .footer { text-align: center; color: #bbb; padding: 20px; font-size: 0.8rem; }
+        .link-card:active { transform: scale(0.98); background: #f0f0f0; }
+        .icon { font-size: 24px; margin-right: 15px; width: 30px; text-align: center; }
+        .text { flex: 1; }
+        .text span { display: block; font-weight: bold; font-size: 1.1rem; }
+        .text small { font-size: 0.8rem; color: #777; }
+
+        /* 重点公告栏 */
+        .announcement {
+            background: #fffcf5; border-left: 4px solid var(--gold);
+            padding: 15px; border-radius: 8px; margin-bottom: 25px; font-size: 0.9rem;
+        }
+
+        .footer { text-align: center; color: #bbb; padding: 30px; font-size: 0.8rem; letter-spacing: 1px; }
     </style>
 </head>
 <body>
 
     <div class="hero">
         <h1>THE WHITE PAVILION</h1>
-        <p>i-Soho @ i-City, Shah Alam</p>
+        <p>Premium Stay @ i-Soho i-City</p>
     </div>
 
     <div class="container">
-        <div class="policy-box">
-            <h3 style="margin-top:0; color:#856404;">⚠️ Booking Rules / 预订须知</h3>
-            <p>• <b>24H Payment:</b> Reservation confirmed after full payment & deposit.</p>
-            <p>• <b>No Smoking:</b> Strictly no smoking or parties.</p>
+        
+        <div class="announcement">
+            <b>📢 预订须知 / Booking Rules:</b><br>
+            • 需在24小时内结清房费及押金以保留预订。<br>
+            • 室内严禁吸烟、电子烟及派对。
         </div>
 
-        <div class="location-box">
-            <h3 style="margin:0; color:var(--dark);">📍 Location / 地点</h3>
-            <p style="margin: 10px 0; font-size: 0.9rem;">i-Soho, i-City, Jalan Multimedia, Seksyen 7, 40000 Shah Alam, Selangor</p>
-            
-            <div class="nav-buttons">
-                <a href="https://waze.com/ul/hw281mshge" target="_blank" class="btn-nav btn-waze">Waze Navigation</a>
-                <a href="https://maps.app.goo.gl/yLzL41v7nEBe2E4s7" target="_blank" class="btn-nav btn-google">Google Maps</a>
+        <a href="https://wa.me/601168744885?text=Hi! I want to book The White Pavilion." class="link-card" style="border-left: 6px solid #25d366;">
+            <div class="icon">💬</div>
+            <div class="text">
+                <span>WhatsApp 立即预订</span>
+                <small>直接联系老板，确认房态</small>
             </div>
-        </div>
-
-        <a href="https://wa.me/601168744885?text=Hi! I am interested in booking The White Pavilion." class="btn-whatsapp">
-            WhatsApp Us to Book Now
         </a>
+
+        <a href="https://waze.com/ul/hw281mshge" class="link-card">
+            <div class="icon">🚗</div>
+            <div class="text">
+                <span>Waze 导航至 i-Soho</span>
+                <small>一键开启 Waze，直达大厅</small>
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=i-Soho+i-City+Shah+Alam" class="link-card">
+            <div class="icon">📍</div>
+            <div class="text">
+                <span>Google Maps 地图</span>
+                <small>查看位置与周边环境</small>
+            </div>
+        </a>
+
+        <a href="tel:+601168744885" class="link-card">
+            <div class="icon">📞</div>
+            <div class="text">
+                <span>紧急联系老板</span>
+                <small>拨通电话寻求即时帮助</small>
+            </div>
+        </a>
+
+        <a href="#" class="link-card">
+            <div class="icon">⭐</div>
+            <div class="text">
+                <span>查看 Trip.com 评价</span>
+                <small>看看住客们怎么说</small>
+            </div>
+        </a>
+
     </div>
 
-    <div class="footer">© 2026 THE WHITE PAVILION</div>
+    <div class="footer">© 2026 THE WHITE PAVILION<br>DESIGNED FOR EXCELLENCE</div>
 
 </body>
 </html>
