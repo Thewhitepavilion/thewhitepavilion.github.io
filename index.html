@@ -1,105 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh-MY">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The White Pavilion | i-Soho i-City</title>
+    <title>The White Pavilion @ i-City</title>
     <style>
-        :root { --gold: #bda37e; --dark: #2c3e50; --bg: #f8f9fa; }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--dark); line-height: 1.6; }
-        
-        .hero { 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=1000&auto=format&fit=crop'); 
-            background-size: cover; background-position: center;
-            height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
         }
-        .hero h1 { font-size: 1.8rem; margin: 0; letter-spacing: 3px; font-weight: 300; }
-        .hero p { font-size: 0.8rem; opacity: 0.9; margin-top: 8px; }
-
-        .container { max-width: 450px; margin: -30px auto 50px; padding: 15px; }
-
-        .announcement {
-            background: white; border-top: 4px solid var(--gold);
-            padding: 20px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        .container {
+            padding: 50px 20px;
         }
-
-        .link-card {
-            background: white; border-radius: 12px; padding: 18px; margin-bottom: 12px;
-            display: flex; align-items: center; text-decoration: none; color: var(--dark);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.04); transition: 0.2s;
+        h1 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
-        .link-card:active { transform: scale(0.97); background: #fafafa; }
-        .icon { font-size: 24px; margin-right: 15px; width: 30px; text-align: center; }
-        .text span { display: block; font-weight: bold; font-size: 1.1rem; }
-        .text small { font-size: 0.8rem; color: #888; }
-
-        /* 强调 WhatsApp 按钮 */
-        .btn-primary { background: #25d366; color: white !important; }
-        .btn-primary small { color: rgba(255,255,255,0.8) !important; }
-
-        .footer { text-align: center; color: #ccc; padding: 20px; font-size: 0.7rem; }
+        p {
+            color: #777;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            background-color: #333;
+            transform: translateY(-3px);
+        }
+        .image-box {
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .image-box img {
+            width: 100%;
+            display: block;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #aaa;
+        }
     </style>
 </head>
 <body>
 
-    
-
-              <div style="width: 100%; max-width: 480px; margin: 0 auto 20px auto; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-        <img src="swan-bed.jpg" alt="The White Pavilion" style="width: 100%; display: block; object-fit: cover;">
-    </div>
-  
     <div class="container">
-        <div class="announcement" style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--gold); border-radius: 15px; padding: 20px; margin-bottom: 25px; text-align: center;">
-            <h3 style="margin-top:0; color:var(--gold); font-size: 1.2rem; border-bottom: 1px solid rgba(212, 175, 55, 0.3); padding-bottom: 10px; margin-bottom: 15px;">Booking Details 预订详情</h3>
-            <div style="font-size: 1.4rem; font-weight: bold; color: #fff; margin-bottom: 8px;">
-                💰 <span style="color: var(--gold);">RM 238</span> / night
-            </div>
-            <div style="font-size: 1rem; color: #ffeb3b; margin-bottom: 15px;">
-                🛡️ Security Deposit: <span style="font-weight: bold;">RM 200</span> (Refundable)
-            </div>
-            <div style="text-align: left; font-size: 0.85rem; color: #ccc; line-height: 1.6;">
-                • 24h payment to confirm reservation.<br>
-                • Check-in: 3PM | Check-out: 11AM<br>
-                • Strictly No Smoking & No Parties.
-            </div>
+        <h1>THE WHITE PAVILION</h1>
+        <p>Minimalist Luxury Staycation @ i-City, Shah Alam</p>
+
+        <a href="https://wa.me/message/BESYZCXYWFCRB1" class="cta-button">BOOK YOUR STAY NOW</a>
+
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="The White Pavilion Suite">
         </div>
 
+        <div class="footer">
+            &copy; 2026 The White Pavilion. All rights reserved.
+        </div>
+    </div>
 
-        <a href="https://wa.me/60105499506?text=Hi%20Ben!%20I'm%20interested%20in%20booking%20The%20White%20Pavilion" 
-           style="background-color: #25D366; display: flex; align-items: center; padding: 15px; border-radius: 12px; text-decoration: none; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <div style="background: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 25px;">
-            </div>
-            <div style="text-align: left;">
-                <span style="color: white; font-weight: bold; font-size: 1.1rem; display: block;">WhatsApp 立即预订</span>
-                <small style="color: rgba(255,255,255,0.9); font-size: 0.85rem;">直接联系 Ben 获取空房日期</small>
-            </div>
-        </a>
-<a href="tel:+60105499506" 
-   style="background-color: #D4AF37; display: flex; align-items: center; padding: 15px; border-radius: 12px; text-decoration: none; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-    <div style="background: white; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
-        <span style="font-size: 20px;">📞</span>
-    </div>
-    <div style="text-align: left;">
-        <span style="color: white; font-weight: bold; font-size: 1.1rem; display: block;">拨打电话 (Call Ben)</span>
-        <small style="color: rgba(255,255,255,0.9); font-size: 0.85rem;">直接通话询问是否有房</small>
-    </div>
-</a>
-
-        
-        <a href="https://waze.com/ul?ll=3.0654,101.4831&navigate=yes" 
-   style="display: flex; align-items: center; padding: 15px; border-radius: 12px; text-decoration: none; margin-bottom: 15px; background: #FFFFFF; border: 1px solid #E0E0E0; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-    
-    <div style="margin-right: 15px; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: #f8f9fa; border-radius: 50%;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Waze_logo.svg" 
-             alt="Waze" 
-             style="width: 25px;"> 
-    </div>
-    
-    <div style="text-align: left;">
-        <span style="color: #333333; font-weight: bold; font-size: 1.1rem; display: block;">Waze 导航至 i-City</span>
-        <small style="color: #888888; font-size: 0.85rem;">Checking your route</small>
-    </div>
-</a>
+</body>
+</html>
